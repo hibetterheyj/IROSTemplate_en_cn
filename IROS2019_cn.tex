@@ -1,0 +1,240 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%2345678901234567890123456789012345678901234567890123456789012345678901234567890
+%        1         2         3         4         5         6         7         8
+
+\documentclass[letterpaper, 10 pt, conference]{ieeeconf}  % 如需a4paper注释本行
+
+%\documentclass[a4paper, 10pt, conference]{ieeeconf}      % 如需a4paper使用本行
+
+\IEEEoverridecommandlockouts                              % 本命令用于
+                                                          % 如果要使用\thanks
+
+\overrideIEEEmargins                                      % N需要满足打印机要求
+
+%如果您遇到以下错误：
+%错误1010 PDF文件可能已损坏（无法打开PDF文件）或
+%错误1000解析内容流时发生错误。 无法分析PDF文件。
+%这是pdfLaTeX转换过滤器的已知问题。 无法使用acrobat reader打开该文件。
+%请使用下面的替代方法之一，通过取消注释其中一个来避免此错误。
+%\pdfobjcompresslevel=0
+%\pdfminorversion=4
+
+% 请参阅文件中稍后的\addtolength命令以平衡栏长度
+% 在文档的最后一页上
+
+% The following packages can be found on http:\\www.ctan.org
+%\usepackage{graphics} % for pdf, bitmapped graphics files
+%\usepackage{epsfig} % for postscript graphics files
+%\usepackage{mathptmx} % assumes new font selection scheme installed
+%\usepackage{times} % assumes new font selection scheme installed
+%\usepackage{amsmath} % assumes amsmath package installed
+%\usepackage{amssymb}  % assumes amsmath package installed
+\usepackage{xeCJK}
+
+\title{\LARGE \bf
+IEEE 论文准备*
+}
+
+
+\author{Albert Author$^{1}$ and Bernard D. Researcher$^{2}$% <-this % stops a space
+\thanks{*This work was not supported by any organization}% <-this % stops a space
+\thanks{$^{1}$Albert Author is with Faculty of Electrical Engineering, Mathematics and Computer Science,
+        University of Twente, 7500 AE Enschede, The Netherlands
+        {\tt\small albert.author@papercept.net}}%
+\thanks{$^{2}$Bernard D. Researcheris with the Department of Electrical Engineering, Wright State University,
+        Dayton, OH 45435, USA
+        {\tt\small b.d.researcher@ieee.org}}%
+}
+
+
+\begin{document}
+
+
+
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+
+该电子文档是一份模板。纸张的各个组成部分[标题，文字，标题等]已经在样式表中定义，如本文档中给出的部分所示。
+
+\end{abstract}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{介绍}
+
+该模板为作者提供了准备论文电子版所需的大部分格式规范。所有标准论文组件的指定原因有三个：（1）格式化论文的易用性，（2）自动编译出符合当前或以后要求的电子文档，以及（3）会议论文的整体一致性。边距，列宽，行间距和类型样式都是内置的；本文档中提供了类型样式的示例，并在示例后的括号内以斜体字标识。虽然提供了各种表格文本样式，但是没有规定一些组件，例如多级方程式，图形和表格。格式化程序需要创建这些组件，并遵循以下适用的标准。
+
+\section{论文提交步骤}
+
+\subsection{选择模板 (Heading 2)}
+
+首先，确认您的论文纸张尺寸正确。此模板已针对美国信纸尺寸的输出进行了定制。如果适当修改纸张尺寸设置，它可用于A4纸张尺寸。
+
+\subsection{始终遵守规范}
+
+该模板用于格式化纸张并设置文本样式。规定了所有边距，列宽，行间距和文本字体; 请不要改变它们。你可能会注意到特殊性。例如，此模板中的顶部边距按比例测量比通常情况更多。此边距和其他边距是人为设定的，使用的规范可以将您的论文作为整个过程的一部分，而不是作为独立文档。请不要修改任何当前的名称。
+
+\section{数学}
+
+在开始格式化纸张之前，请先将内容写入并另存为单独的文本文件。保持文本和图形文件分开，直到文本格式化和样式化。不要使用硬标签，并将硬回车的使用限制为段落末尾的一个返回。不要在论文的任何地方添加任何类型的分页。 不要对文本头进行编号 - 模板将为您执行此操作。
+
+最后，在格式化之前完成内容和组织编辑。校对拼写和语法时请注意以下事项：
+
+\subsection{缩略词} 
+
+即使已在摘要中定义，在文本中第一次使用缩略词时，也应该定义缩略词。不必定义诸如IEEE，SI，MKS，CGS，sc，dc和rms的缩写。除非不可避免，否则不要在标题或标题中使用缩写。
+
+\subsection{单位}
+
+\begin{itemize}
+
+\item 使用SI（MKS）或CGS作为主要单位。（鼓励SI单位。）英语单位可用作辅助单位（括号内）。例外情况是使用英制单位作为交易中的标识符，例如3.5英寸磁盘驱动器。
+\item 避免组合SI和CGS单位，例如奥斯特的电流和奥斯特的磁场。 这通常会导致混淆，因为方程在尺寸上不平衡。 如果必须使用混合单位，请清楚地说明在等式中使用的每个数量的单位。
+\item 不要混合完整的拼写和单位缩写：Wb / m2或每平方米的网络，而不是webers / m2。 在单词出现在文本中时拼出单位：……几亨利，不是……几个H.
+\item 在小数点前使用零：0.25，而不是.25。 使用cm3，而不是cc。(bullet list)
+
+\end{itemize}
+
+
+\subsection{方程}
+
+方程式是该模板的规定规范的例外。 您需要确定是否应使用Times New Roman或Symbol字体键入等式（请不要使用其他字体）。要创建多层方程，可能需要将方程式视为图形，并在纸张样式后将其插入到文本中。数字方程连续。括号内的公式编号是使用右侧制表位将右侧位置齐平，如(1)所示。为了使方程更紧凑，可以使用 solidus ( / )，exp函数或适当的指数。斜体表示数量和变量的罗马符号，但不是希腊符号。使用长划线而不是连字符表示减号。用逗号或句点表示句点，当它们是句子的一部分时，如
+
+$$
+\alpha + \beta = \chi \eqno{(1)}
+$$
+
+请注意，使用中心制表位使等式居中。确保等式中的符号已在等式之前或之后定义。 使用(1) ，而不是Eq.(1)或等式(1)，除了在句子的开头：等式(1) 是 ……
+
+\subsection{一些常见错误}
+\begin{itemize}
+
+
+\item 单词数据是复数，而不是单数。
+\item 真空渗透率的下标0和其他常见的科学常数，下标格式为零，而不是小写字母o。
+\item 在美式英语中，逗号，半/冒号，句号，问号和感叹号只有在引用完的思想或名称时才会出现在引号内，例如标题或完整引用。当使用引号而不是粗体或斜体字体来突出显示单词或短语时，标点符号应出现在引号之外。句子末尾的括号短语或语句在右括号之外标点（如下所示）。 （在括号内加上括号内的句子。）
+\item 图中的图是插图（inset），而不是插入（insert）。替代这个词比交替使用这个词更优先（除非你的意思是交替出现）。
+\item 不要使用这个词本质上是近似或有效的。
+\item 在你的论文题目中，如果使用的单词可以准确地替换使用的单词，则将u大写; 如果没有，继续使用小写。
+\item 要注意同音异义词的不同含义影响和效果，补充和赞美，谨慎和离散，主要和原则。
+\item 不要混淆暗示和推断。
+\item 前缀non不是单词; 它应该加入它修改的单词，通常没有连字符。
+\item 在拉丁语缩写 et al. 的 et 之后没有句号。
+\item 缩略语 i.e. 意思为“也即”，缩略语 e.g. 意思为“举例”。
+
+\end{itemize}
+
+
+\section{使用模板}
+
+使用此示例文档作为LaTeX源文件创建文档。将此文件保存为{\bf root.tex}。您必须确保使用此发行版附带的 cls文件。如果使用不同的样式文件，则无法获得所需的边距。另请注意，在创建输出PDF文件时，源文件只是其中的一部分。{\it 你的 \TeX\ $\rightarrow$ PDF编译器决定输出文件尺寸。即使您使用所有的规范在源代码中输出一个信件大小的文件。如果您的过滤器设置为生成A4，那么您只能得到A4输出。}
+
+在使用\TeX，无法考虑所有可能的情况。如果您使用的是多个\TeX\文件，则必须确保"MAIN"源文件被称为root.TeX。如果您的会议使用的是 PaperPlaza 内置的\TeX\到PDF转换工具，这一点尤为重要。
+
+\subsection{标题等}
+
+文本标题以关系层次为基础组织主题。例如，论文标题是正文文本标题，因为所有后续材料都涉及并阐述了这一主题。如果有两个或更多子主题，则应使用下一级标题题头（大写罗马数字），相反，如果不存在至少两个子主题，则不应引入子标题。规定了标题1、标题2、标题3和标题4的样式。
+
+\subsection{图片表格}
+
+定位图片和表格：将图片和表格放在栏的顶部和底部。避免将它们放在栏的中间。大型图片和表格可以跨越两栏。图片标题应低于图片;表格标题应放在表格上方。在正文引用之后插入图片和表格。即使在句子的开头，也要使用图1（Fig. 1）的缩写。
+
+\begin{table}[h]
+\caption{表格范例}
+\label{table_example}
+\begin{center}
+\begin{tabular}{|c||c|}
+\hline
+One & Two\\
+\hline
+Three & Four\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+   \begin{figure}[thpb]
+      \centering
+      \framebox{\parbox{3in}{我们建议您使用文本框插入图形（理想情况下是300 dpi TIFF或EPS文件，嵌入所有字体），因为在文档中，此方法比直接插入图片更稳定。
+}}
+      %\includegraphics[scale=1.0]{figurefile}
+      \caption{Inductance of oscillation winding on amorphous
+       magnetic core versus DC bias magnetic field}
+      \label{figurelabel}
+   \end{figure}
+   
+
+图片标签（Labels）：使用8号Times New Roman作为标签。在编写图片坐标轴标签时使用单词而不是符号或缩写，以避免混淆读者。例如，写出数量Magnetization，或Magnetization, M，而不仅仅是M.如果在标签中包含单位，则将它们显示在括号内。不要仅用单位标记坐标轴。在该示例中，应写Magnetization (A/m)或Magnetization {A[m(1)]}，而不仅仅是A/m。不要使用数量和单位的比率标记坐标轴。例如，应写Temperature (K)，而不是Temperature/K。
+
+\section{结论}
+
+结论部分不是必需的。虽然结论可能会回顾论文的要点，但不要将摘要复制为结论。 结论可能会详细说明工作的重要性或建议应用和扩展。
+
+\addtolength{\textheight}{-12cm}   
+% 此命令用于手动平衡文档最后一页上的列长度。它会将最后一页的文本高度缩短适当的数量。此命令直到下一页才会生效，因此它应该出现在最后一页之前的页面上。 确保不要过多地缩短文本高度。
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{APPENDIX}
+
+附录应出现在致谢之前。
+
+\section*{致谢}
+
+在美国，acknowledgment单词的推荐拼写g后是没有e的。请避免笨拙的表达，如我们其中一人（R. B. G.）感谢…… 相反，请尝试使用R. B. G.感谢。将支持机构致谢放在第一页的无编号脚注。
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+参考文献对读者很重要；因此每个引用必须完整和正确。如果可能的话，参考文献应是常用的出版物。
+
+
+
+\begin{thebibliography}{99}
+
+\bibitem{c1} G. O. Young, Synthetic structure of industrial plastics (Book style with paper title and editor),    in Plastics, 2nd ed. vol. 3, J. Peters, Ed.  New York: McGraw-Hill, 1964, pp. 1564.
+\bibitem{c2} W.-K. Chen, Linear Networks and Systems (Book style).      Belmont, CA: Wadsworth, 1993, pp. 123135.
+\bibitem{c3} H. Poor, An Introduction to Signal Detection and Estimation.   New York: Springer-Verlag, 1985, ch. 4.
+\bibitem{c4} B. Smith, An approach to graphs of linear forms (Unpublished work style), unpublished.
+\bibitem{c5} E. H. Miller, A note on reflector arrays (Periodical styleAccepted for publication), IEEE Trans. Antennas Propagat., to be publised.
+\bibitem{c6} J. Wang, Fundamentals of erbium-doped fiber amplifiers arrays (Periodical styleSubmitted for publication), IEEE J. Quantum Electron., submitted for publication.
+\bibitem{c7} C. J. Kaufman, Rocky Mountain Research Lab., Boulder, CO, private communication, May 1995.
+\bibitem{c8} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, Electron spectroscopy studies on magneto-optical media and plastic substrate interfaces(Translation Journals style), IEEE Transl. J. Magn.Jpn., vol. 2, Aug. 1987, pp. 740741 [Dig. 9th Annu. Conf. Magnetics Japan, 1982, p. 301].
+\bibitem{c9} M. Young, The Techincal Writers Handbook.  Mill Valley, CA: University Science, 1989.
+\bibitem{c10} J. U. Duncombe, Infrared navigationPart I: An assessment of feasibility (Periodical style), IEEE Trans. Electron Devices, vol. ED-11, pp. 3439, Jan. 1959.
+\bibitem{c11} S. Chen, B. Mulgrew, and P. M. Grant, A clustering technique for digital communications channel equalization using radial basis function networks, IEEE Trans. Neural Networks, vol. 4, pp. 570578, July 1993.
+\bibitem{c12} R. W. Lucky, Automatic equalization for digital communication, Bell Syst. Tech. J., vol. 44, no. 4, pp. 547588, Apr. 1965.
+\bibitem{c13} S. P. Bingulac, On the compatibility of adaptive controllers (Published Conference Proceedings style), in Proc. 4th Annu. Allerton Conf. Circuits and Systems Theory, New York, 1994, pp. 816.
+\bibitem{c14} G. R. Faulhaber, Design of service systems with priority reservation, in Conf. Rec. 1995 IEEE Int. Conf. Communications, pp. 38.
+\bibitem{c15} W. D. Doyle, Magnetization reversal in films with biaxial anisotropy, in 1987 Proc. INTERMAG Conf., pp. 2.2-12.2-6.
+\bibitem{c16} G. W. Juette and L. E. Zeffanella, Radio noise currents n short sections on bundle conductors (Presented Conference Paper style), presented at the IEEE Summer power Meeting, Dallas, TX, June 2227, 1990, Paper 90 SM 690-0 PWRS.
+\bibitem{c17} J. G. Kreifeldt, An analysis of surface-detected EMG as an amplitude-modulated noise, presented at the 1989 Int. Conf. Medicine and Biological Engineering, Chicago, IL.
+\bibitem{c18} J. Williams, Narrow-band analyzer (Thesis or Dissertation style), Ph.D. dissertation, Dept. Elect. Eng., Harvard Univ., Cambridge, MA, 1993. 
+\bibitem{c19} N. Kawasaki, Parametric study of thermal and chemical nonequilibrium nozzle flow, M.S. thesis, Dept. Electron. Eng., Osaka Univ., Osaka, Japan, 1993.
+\bibitem{c20} J. P. Wilkinson, Nonlinear resonant circuit devices (Patent style), U.S. Patent 3 624 12, July 16, 1990. 
+
+
+
+
+
+
+\end{thebibliography}
+
+
+
+
+\end{document}
